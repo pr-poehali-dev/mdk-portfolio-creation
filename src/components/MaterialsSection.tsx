@@ -64,6 +64,15 @@ const MaterialsSection = () => {
           downloadUrl: "#",
           date: "12.01.2025",
           size: "720 КБ"
+        },
+        {
+          id: "8",
+          title: "Рекомендации по написанию программ внеурочной деятельности",
+          description: "Подробное руководство по составлению программ внеурочной деятельности",
+          fileType: "doc",
+          downloadUrl: "/recommendations",
+          date: "02.05.2025",
+          size: "368 КБ"
         }
       ]
     },
@@ -139,21 +148,40 @@ const MaterialsSection = () => {
           ))}
         </Tabs>
 
-        {/* Выделенная секция для реферата */}
-        <div className="mt-16 p-6 bg-primary/10 rounded-lg">
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div>
-              <h3 className="text-xl font-bold mb-2">Новый реферат</h3>
-              <p className="text-gray-700">
-                «Особенности организации внеурочных занятий по общекультурному направлению»
-              </p>
+        {/* Выделенные секции для новых материалов */}
+        <div className="mt-16 grid gap-6 md:grid-cols-2">
+          <div className="p-6 bg-primary/10 rounded-lg">
+            <div className="flex flex-col items-start gap-4">
+              <div>
+                <h3 className="text-xl font-bold mb-2">Реферат</h3>
+                <p className="text-gray-700">
+                  «Особенности организации внеурочных занятий по общекультурному направлению»
+                </p>
+              </div>
+              <Button asChild>
+                <Link to="/referat">
+                  <Icon name="FileText" className="w-4 h-4 mr-2" />
+                  Читать реферат
+                </Link>
+              </Button>
             </div>
-            <Button asChild>
-              <Link to="/referat">
-                <Icon name="FileText" className="w-4 h-4 mr-2" />
-                Читать реферат
-              </Link>
-            </Button>
+          </div>
+          
+          <div className="p-6 bg-primary/10 rounded-lg">
+            <div className="flex flex-col items-start gap-4">
+              <div>
+                <h3 className="text-xl font-bold mb-2">Рекомендации</h3>
+                <p className="text-gray-700">
+                  Подробное руководство по написанию программ внеурочной деятельности
+                </p>
+              </div>
+              <Button asChild>
+                <Link to="/recommendations">
+                  <Icon name="BookOpen" className="w-4 h-4 mr-2" />
+                  Смотреть рекомендации
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

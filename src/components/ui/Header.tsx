@@ -24,11 +24,11 @@ const Header = () => {
           <Link to="/referat" className="text-sm font-medium hover:text-primary transition-colors">
             Реферат
           </Link>
+          <Link to="/recommendations" className="text-sm font-medium hover:text-primary transition-colors">
+            Рекомендации
+          </Link>
           <a href="#upload" className="text-sm font-medium hover:text-primary transition-colors">
             Загрузить материалы
-          </a>
-          <a href="#achievements" className="text-sm font-medium hover:text-primary transition-colors">
-            Достижения
           </a>
         </nav>
 
