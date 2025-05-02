@@ -21,6 +21,9 @@ const Header = () => {
           <a href="#materials" className="text-sm font-medium hover:text-primary transition-colors">
             Методические материалы
           </a>
+          <Link to="/referat" className="text-sm font-medium hover:text-primary transition-colors">
+            Реферат
+          </Link>
           <a href="#upload" className="text-sm font-medium hover:text-primary transition-colors">
             Загрузить материалы
           </a>

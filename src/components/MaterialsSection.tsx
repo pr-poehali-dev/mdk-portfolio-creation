@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 import { FileCard, FileProps } from "@/components/ui/file-card";
+import { Link } from "react-router-dom";
 
 const MaterialsSection = () => {
   const categories = [
@@ -67,36 +68,27 @@ const MaterialsSection = () => {
       ]
     },
     {
-      title: "Дидактические материалы",
-      description: "Пособия для использования во внеурочной работе",
-      icon: "FolderOpen",
+      title: "Рефераты",
+      description: "Исследовательские и теоретические работы по методике",
+      icon: "FileText",
       files: [
         {
           id: "6",
-          title: "Презентации внеурочных занятий",
-          description: "Набор презентаций для проведения внеурочных занятий по различным тематикам",
-          fileType: "ppt",
-          downloadUrl: "#",
-          date: "25.03.2025",
-          size: "4.2 МБ"
+          title: "Особенности организации внеурочных занятий по общекультурному направлению",
+          description: "Реферат на тему особенностей организации и проведения внеурочных занятий по общекультурному направлению",
+          fileType: "doc",
+          downloadUrl: "/referat",
+          date: "02.05.2025",
+          size: "245 КБ"
         },
         {
           id: "7",
-          title: "Интерактивные игры",
-          description: "Сборник интерактивных игр для развития коммуникативных навыков",
-          fileType: "other",
+          title: "Интерактивные методы обучения",
+          description: "Роль интерактивных методов обучения во внеурочной деятельности в коррекционно-развивающем образовании",
+          fileType: "pdf",
           downloadUrl: "#",
-          date: "18.02.2025",
-          size: "2.5 МБ"
-        },
-        {
-          id: "8",
-          title: "Наглядные пособия",
-          description: "Шаблоны наглядных пособий для распечатки и использования во внеурочной деятельности",
-          fileType: "img",
-          downloadUrl: "#",
-          date: "07.04.2025",
-          size: "3.1 МБ"
+          date: "18.04.2025",
+          size: "1.7 МБ"
         }
       ]
     }
@@ -146,6 +138,24 @@ const MaterialsSection = () => {
             </TabsContent>
           ))}
         </Tabs>
+
+        {/* Выделенная секция для реферата */}
+        <div className="mt-16 p-6 bg-primary/10 rounded-lg">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+              <h3 className="text-xl font-bold mb-2">Новый реферат</h3>
+              <p className="text-gray-700">
+                «Особенности организации внеурочных занятий по общекультурному направлению»
+              </p>
+            </div>
+            <Button asChild>
+              <Link to="/referat">
+                <Icon name="FileText" className="w-4 h-4 mr-2" />
+                Читать реферат
+              </Link>
+            </Button>
+          </div>
+        </div>
       </div>
     </section>
   );
