@@ -15,15 +15,18 @@ const Header = () => {
           <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
             Главная
           </Link>
-          <Link to="#program" className="text-sm font-medium hover:text-primary transition-colors">
+          <a href="#program" className="text-sm font-medium hover:text-primary transition-colors">
             О программе
-          </Link>
-          <Link to="#materials" className="text-sm font-medium hover:text-primary transition-colors">
+          </a>
+          <a href="#materials" className="text-sm font-medium hover:text-primary transition-colors">
             Методические материалы
-          </Link>
-          <Link to="#achievements" className="text-sm font-medium hover:text-primary transition-colors">
+          </a>
+          <a href="#upload" className="text-sm font-medium hover:text-primary transition-colors">
+            Загрузить материалы
+          </a>
+          <a href="#achievements" className="text-sm font-medium hover:text-primary transition-colors">
             Достижения
-          </Link>
+          </a>
         </nav>
 
         <Button variant="outline" size="sm" className="md:hidden">

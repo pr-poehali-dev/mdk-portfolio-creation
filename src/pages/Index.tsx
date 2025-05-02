@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import ProgramSection from "@/components/ProgramSection";
 import MaterialsSection from "@/components/MaterialsSection";
 import AchievementsSection from "@/components/AchievementsSection";
+import UploadSection from "@/components/UploadSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,6 +15,7 @@ const Index = () => {
         <Hero />
         <ProgramSection />
         <MaterialsSection />
+        <UploadSection />
         <AchievementsSection />
       </main>
       <Footer />
