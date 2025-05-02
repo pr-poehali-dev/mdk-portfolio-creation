@@ -11,7 +11,7 @@ const Header = () => {
           <span className="text-xl font-bold text-primary">Портфолио МДК.02.03</span>
         </Link>
 
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden md:flex items-center space-x-4">
           <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
             Главная
           </Link>
@@ -19,7 +19,7 @@ const Header = () => {
             О программе
           </a>
           <a href="#materials" className="text-sm font-medium hover:text-primary transition-colors">
-            Методические материалы
+            Материалы
           </a>
           <Link to="/referat" className="text-sm font-medium hover:text-primary transition-colors">
             Реферат
@@ -27,8 +27,11 @@ const Header = () => {
           <Link to="/recommendations" className="text-sm font-medium hover:text-primary transition-colors">
             Рекомендации
           </Link>
+          <Link to="/gifted-children" className="text-sm font-medium hover:text-primary transition-colors">
+            Одаренные дети
+          </Link>
           <a href="#upload" className="text-sm font-medium hover:text-primary transition-colors">
-            Загрузить материалы
+            Загрузка
           </a>
         </nav>
 

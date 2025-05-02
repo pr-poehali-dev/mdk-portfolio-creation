@@ -39,6 +39,15 @@ const MaterialsSection = () => {
           downloadUrl: "#",
           date: "20.02.2025",
           size: "1.5 МБ"
+        },
+        {
+          id: "9",
+          title: "Работа с одаренными детьми",
+          description: "Памятка для учителей по выявлению и развитию детской одаренности в условиях внеурочной деятельности",
+          fileType: "doc",
+          downloadUrl: "/gifted-children",
+          date: "02.05.2025",
+          size: "420 КБ"
         }
       ]
     },
@@ -149,7 +158,7 @@ const MaterialsSection = () => {
         </Tabs>
 
         {/* Выделенные секции для новых материалов */}
-        <div className="mt-16 grid gap-6 md:grid-cols-2">
+        <div className="mt-16 grid gap-6 md:grid-cols-3">
           <div className="p-6 bg-primary/10 rounded-lg">
             <div className="flex flex-col items-start gap-4">
               <div>
@@ -179,6 +188,23 @@ const MaterialsSection = () => {
                 <Link to="/recommendations">
                   <Icon name="BookOpen" className="w-4 h-4 mr-2" />
                   Смотреть рекомендации
+                </Link>
+              </Button>
+            </div>
+          </div>
+          
+          <div className="p-6 bg-primary/10 rounded-lg">
+            <div className="flex flex-col items-start gap-4">
+              <div>
+                <h3 className="text-xl font-bold mb-2">Памятка</h3>
+                <p className="text-gray-700">
+                  Работа с одаренными детьми во внеурочной деятельности
+                </p>
+              </div>
+              <Button asChild>
+                <Link to="/gifted-children">
+                  <Icon name="Sparkles" className="w-4 h-4 mr-2" />
+                  Открыть памятку
                 </Link>
               </Button>
             </div>
